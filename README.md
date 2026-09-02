@@ -143,7 +143,7 @@ Dark Sherlock searches across **40+ dark web forums**.
 
 Sol:
 ```
-..
+BVMkqwkMjtTNmD5spKayhYeb6JUfmReGxGaD4kcetXp2
 ```
 
 Dark Sherlock relies on the forum information and research provided by [Threat usernames](https://threatactorusernames.com/).
