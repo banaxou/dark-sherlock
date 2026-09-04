@@ -34,7 +34,7 @@ Install Dark Sherlock with pip | git:
 pip install dsherlock
 or
 git clone https://github.com/banaxou/dark-sherlock/
-cd dark-sherlock
+cd dark-sherlock/scripts
 python3 dark_sl.py
 ```
 
