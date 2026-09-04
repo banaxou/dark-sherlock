@@ -32,6 +32,10 @@ Install Dark Sherlock with:
 
 ```bash
 pip install dsherlock
+or
+git clone https://github.com/banaxou/dark-sherlock/
+cd dark-sherlock
+python3 dark_sl.py
 ```
 
 > **Note:** Make sure you are installing the official Dark Sherlock package.  
