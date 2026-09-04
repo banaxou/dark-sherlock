@@ -39,7 +39,7 @@ python3 dark_sl.py
 ```
 
 > **Note:** Make sure you are installing the official Dark Sherlock package.  
-> Be careful with packages using similar names.
+> Be careful with packages using similar names | and use a VPN ! or tor connexion will be added soon
 
 ---
 
