@@ -28,7 +28,7 @@ It is designed to make username research faster by checking multiple forums from
 
 ## Installation
 
-Install Dark Sherlock with:
+Install Dark Sherlock with pip | git:
 
 ```bash
 pip install dsherlock
