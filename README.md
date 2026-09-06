@@ -43,6 +43,18 @@ python3 dark_sl.py
 > **Note:** Make sure you are installing the official Dark Sherlock package.  
 > Be careful with packages using similar names | And use a VPN! A Tor connection will be added soon
 
+
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=banaxou%2Fdark-sherlock&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=banaxou/dark-sherlock&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=banaxou/dark-sherlock&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=banaxou/dark-sherlock&type=date&legend=top-left" />
+ </picture>
+</a>
+
 ---
 
 ## Usage
