@@ -18,6 +18,9 @@
   <a href="https://threatactorusernames.com/forums-list"><img src="https://img.shields.io/badge/Forums-red?style=for-the-badge" alt="Forums list"></a>
 </p>
 
+![tuto](https://media.licdn.com/dms/image/v2/D4E22AQESS3e7ISbakA/feedshare-image-high-res/B4EaEf8W3ZGkAU-/0/1791537278662?e=2147483647&v=beta&t=oliUYRCeK0JSHDkt098qU07xn4WBenwbWLCpHCQUHd4)
+
+
 ---
 
 ## About
