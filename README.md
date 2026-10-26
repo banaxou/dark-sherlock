@@ -8,7 +8,7 @@
   <br><br>
 </p>
 
-[Dark Sherlock 1.0](https://pypi.org/project/dark-sherlock/) [ by ovax &](https://instagram.com/banaxou) [cti](https://x.com/cti__Updates)
+[Dark Sherlock 1.1](https://pypi.org/project/dark-sherlock/) [ by ovax &](https://instagram.com/banaxou) [cti](https://x.com/cti__Updates)
 
 <p align="center">
   <a href="https://threatactorusernames.com/"><img src="https://img.shields.io/badge/Website-red?style=for-the-badge" alt="Website"></a>
@@ -115,7 +115,7 @@ dsherlock -h
 dsherlock -h
 usage: dsherlock [username] [-u USERNAME] [--json] [--txt]
 
-Dark Sherlock - Username CSINT Tool : Find Usernames Across Dark web ;) v1.0
+Dark Sherlock - Username CSINT Tool : Find Usernames Across Dark web ;) v1.1
 
 positional arguments:
   usernames             Username to check
