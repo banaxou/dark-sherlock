@@ -1,4 +1,4 @@
-# code by ovax | dark sherlock argparse 1.0
+# code by ovax | dark sherlock 1.1 proxy
 
 import requests
 import argparse
@@ -13,8 +13,8 @@ RESET = "\033[0m"
 def parsey():
     parser = argparse.ArgumentParser(
         prog="dark-sl",
-        description="Dark Sherlock - Username CSINT Tool : Find Usernames Across  Dark web ;) v1.0",
-        usage="%(prog)s [username] [-u USERNAME] [--json] [--txt]",
+        description="Dark Sherlock - Username CSINT Tool : Find Usernames Across  Dark web ;) v1.1",
+        usage="%(prog)s [username] [-u USERNAME] [--proxy PROXY] [--json] [--txt]",
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
 
@@ -32,6 +32,11 @@ def parsey():
     )
 
     parser.add_argument(
+        "--proxy",
+        help="Proxy URL (ex: socks5h://127.0.0.1:9050 or http://user:pass@host:8080)"
+    )
+
+    parser.add_argument(
         "--json",
         action="store_true",
         help="Save results in JSON file + display normal output"
@@ -45,7 +50,7 @@ def parsey():
 
     return parser.parse_args()
 
-def dsherlock(user, jsonx=False, txt=False):
+def dsherlock(user, jsonx=False, txt=False, proxies=None):
     if not jsonx:
         print(f"\n[{RED}*{RESET}] {WHITE}Checking username {user} on:{RESET}\n")
 
@@ -57,15 +62,15 @@ def dsherlock(user, jsonx=False, txt=False):
     }
 
     try:
-        req = requests.get(f"https://threatactorusernames.com/api/search?q={user}", timeout=10)
+        req = requests.get(f"https://threatactorusernames.com/api/search?q={user}", proxies=proxies, timeout=20)
         data = req.json()
         results = data.get("results", [])
 
-        req_x = requests.get(f"https://x.com/{user}", timeout=10)
+        req_x = requests.get(f"https://x.com/{user}", proxies=proxies, timeout=20)
         status_x = req_x.status_code
         x = status_x == 200
 
-        req_github = requests.get(f"https://api.github.com/users/{user}", timeout=10)
+        req_github = requests.get(f"https://api.github.com/users/{user}", proxies=proxies, timeout=20)
         s = req_github.status_code
         g = s == 200
 
@@ -148,8 +153,23 @@ def main():
         user = input(f"{RED}╭──\n╰─>{RESET} {WHITE}enter username:{RESET} ").strip() or "ZeroBytes"
         usernames = [user]
 
+    proxy = args.proxy
+
+    if proxy and proxy.startswith("socks5://"):
+        proxy = "socks5h://" + proxy[len("socks5://"):]
+
+    proxies = {"http": proxy, "https": proxy} if proxy else None
+
+    if proxies and not args.json:
+        try:
+            ip = requests.get("https://api.ipify.org", proxies=proxies, timeout=20).text.strip()
+            print(f"[{RED}*{RESET}] {WHITE}IP via proxy: {ip}{RESET}")
+        except requests.exceptions.RequestException as e:
+            print(f"[{RED}-{RESET}] Proxy error: {e}")
+            sys.exit(1)
+
     for user in usernames:
-        dsherlock(user, jsonx=args.json, txt=args.txt)
+        dsherlock(user, jsonx=args.json, txt=args.txt, proxies=proxies)
 
 
 if __name__ == "__main__":
