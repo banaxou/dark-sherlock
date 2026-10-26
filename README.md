@@ -29,6 +29,8 @@
 
 It is designed to make username research faster by checking multiple forums from a single command.
 
+**dark sherlock 1.1.0 cli module mode come after ballon d'or**
+
 ---
 
 ## Installation
