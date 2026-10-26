@@ -40,6 +40,7 @@ pip install dsherlock
 or
 git clone https://github.com/banaxou/dark-sherlock/
 cd dark-sherlock/scripts
+pip install -r requirements.txt
 python3 dark_sl.py
 ```
 
