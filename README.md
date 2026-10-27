@@ -27,7 +27,7 @@
 
 **Dark Sherlock** is a CSINT tool built to search for usernames across **40+ dark web forums**.
 
-It is designed to make username research faster by checking multiple forums from a single command.
+It is designed to make username research faster by checking multiple forums from a single command
 
 **dark sherlock 1.1.0 cli module mode come after ballon d'or**
 
@@ -51,7 +51,7 @@ python3 dark_sl.py
 ```
 
 > **Note:** Make sure you are installing the official Dark Sherlock package.  
-> Be careful with packages using similar names | And use a VPN! A Tor connection 
+> Be careful with packages using similar names | And use a VPN ! or Tor connection 
 
 
 
