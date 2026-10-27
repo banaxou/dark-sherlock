@@ -47,7 +47,7 @@ python3 dark_sl.py
 ```
 
 > **Note:** Make sure you are installing the official Dark Sherlock package.  
-> Be careful with packages using similar names | And use a VPN! A Tor connection will be added soon
+> Be careful with packages using similar names | And use a VPN! A Tor connection 
 
 
 
@@ -102,7 +102,7 @@ Save the results to a TXT file.
 Display the available options with:
 
 ```bash
-dark-sl -h
+dark-sherlock -h
 ```
 
 or:
@@ -141,7 +141,7 @@ options:
 
 Dark Sherlock provides two packages:
 
-`dark-sl`
+`dark-sherlock`
 
 and
 
